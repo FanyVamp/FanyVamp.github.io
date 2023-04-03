@@ -3,13 +3,12 @@
     text-align: center; 
     border: 4px groove rgb(174,74,77);
     background-color: rgb(246,122, 116);
-
 }
 .card-height {
     height: 350px;
-  }  
-.card-img-top {
-    width: 250px; 
+}  
+.card-img-top{
+    width: auto; 
     height: 250px; 
     object-fit: cover;
 }
@@ -35,6 +34,3 @@ img {
     width: auto;
     height: auto;
 }
-  
-  
-  
