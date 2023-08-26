@@ -1,5 +1,5 @@
 body{
-  background-image: url("Profile/FanyBanner.jpeg");
+  background-image: url(Profile/FanyBanner.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,6 +30,18 @@ p{
 h1{
   border: 0.3125rem double rgb(39, 28, 48);
   background-color: rgba(0, 0, 0, 0.5); 
+}
+.Novedades{
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 0.3125rem double rgb(39, 28, 48);
+}
+.twitter-timeline{
+  padding-top: 2rem;
 }
 .btn{
   display: inline-block;
