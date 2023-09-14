@@ -1,7 +1,1 @@
-RewriteEngine On
-RewriteCond %{QUERY_STRING} ^Fanarts$
-RewriteRule ^(.*)$ https://fanyvamp.github.io/FanArts/$1 [R=301,L]
-RewriteCond %{QUERY_STRING} ^fanarts$
-RewriteRule ^(.*)$ https://fanyvamp.github.io/FanArts/$1 [R=301,L]
-RewriteCond %{QUERY_STRING} ^FANARTS$
-RewriteRule ^(.*)$ https://fanyvamp.github.io/FanArts/$1 [R=301,L]
+Redirect 301 /Fanarts /FanArts.html
