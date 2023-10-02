@@ -68,18 +68,10 @@ h1{
 .Historia{
   max-width: 200px; 
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
 }
-.Kofi{
+.Kofi,.VGen{
   max-width: 300px;
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
 }
 .container #kofiframe{
   display: flex;
