@@ -2,7 +2,7 @@ function formatTime(number) {
     return number < 10 ? `0${number}` : number;
 }
 function UC() {
-    const targetDate = new Date('2023-10-30T00:00:00-03:00');
+    const targetDate = new Date('2023-10-30T11:00:00-03:00');
     const currentDate = new Date();
     const timeDifference = targetDate - currentDate;
 
