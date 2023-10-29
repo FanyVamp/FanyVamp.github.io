@@ -17,7 +17,7 @@ function UC() {
         const FMinutes = formatTime(minutes);
         const FSeconds = formatTime(seconds);
         if (days > 0) {
-            document.getElementById('Contador').innerHTML = `${days} Días - ${FHours}:${FMinutes}:${FSeconds}`;
+            document.getElementById('Contador').innerHTML = `${days} Día - ${FHours}:${FMinutes}:${FSeconds}`;
         } else {
             document.getElementById('Contador').innerHTML = `${FHours}:${FMinutes}:${FSeconds}`;
         }
