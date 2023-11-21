@@ -8,10 +8,11 @@
     <meta name="description" content="Bienvenido A FanyVamp FanArts En Esta Página Podrás Ver Los FanArts Que Me Han Hecho Y Tener Una Referencia Si Quieres Hacerme Uno">
     <meta name="keywords" content="FanyVamp,Fany Vamp,FanyVampirina,Fany Vampirina,FanyVamp FanArts,Fany Vamp FanArts">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="Sources/Resources/Libraries/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Sources/Resources/Libraries/csshake/csshake.css">
     <link rel="stylesheet" href="Sources/Resources/FanyVamp.css"> 
     <link rel="stylesheet" href="Sources/Resources/FanyVampFanArts.css">
+    <script src="Sources/Resources/Libraries/JQuery/jQuery3.7.1.js"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" class="scrollspy" id="main-container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -33,7 +34,7 @@
         </div>
     </nav>
 
-  <div class="content">
+<div class="content">
     <div id="Referencia" class="Top"><h1 class="text-light text-center fw-bold">Referencia Para Fanarts</h1></div>
     <div class="container">
         <div class="row">
@@ -51,7 +52,32 @@
     <div class="container-fluid">
         <div class="row" id="imageContainer"></div>
     </div>
+
+
+<!-- Modal -->
+<div class="modal custom-modal" id="myModal" tabindex="-1">
+  <div class="modal-dialog modal-top modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="btns Copy"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"/>
+        </svg></span>
+        <span class="btns right"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+        </svg></span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
   </div>
+</div>
+
+
+</div>
+
+
 
     <footer class="bg-dark">
       <div class="container-fluid">
@@ -71,11 +97,10 @@
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="Sources/Resources/Libraries/Bootstrap/js/bootstrap.bundle.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="Sources/Resources/FanArt.js"></script>
     <script src="Sources/Resources/ScrollReveal.js"></script>
     <script src="Sources/Resources/ScrollSection.js"></script>
-    <script src="Sources/Resources/ImageBoards.js"></script>
   </body>
 </html>
