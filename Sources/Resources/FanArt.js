@@ -8,7 +8,7 @@ $.get(folderUrl).done(data => $('#imageContainer').append(data.reverse().filter(
 
     const shakeClass = 'shake-' + ['little', 'slow', 'slow', 'horizontal', 'vertical'][Math.floor(Math.random() * 5)];
 
-    const altTxt = item.name.replace(/-0+/, ' '); 
+    let altTxt = item.name.replace(/-0+/, ' '); 
     altTxt = altTxt.replace(/(\.webp|\.webm)$/, '');
 
     if (isGif) {
