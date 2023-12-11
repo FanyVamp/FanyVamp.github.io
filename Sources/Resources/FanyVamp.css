@@ -91,11 +91,14 @@ h1{
 }
 footer{
   border: 0.3125rem double rgb(39, 28, 48);
-  
 }
 .shake{
   display:inline-block !important;
 }
 .translucent{
   opacity: 0.4;
+}
+svg.bi-boxes{
+  max-width: 5rem;
+  height: auto;
 }
