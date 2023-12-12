@@ -8,14 +8,14 @@ $.get(folderUrl).done(data => $('#imageContainer').append(data.reverse().filter(
 
     const shakeClass = 'shake-' + ['little', 'slow', 'slow', 'horizontal', 'vertical'][Math.floor(Math.random() * 5)];
 
-    let altTxt = item.name.replace(/-0+/, ' '); 
-    altTxt = altTxt.replace(/(\.webp|\.webm)$/, '');
+    let altText = item.name.replace(/-0+/, ' '); 
+    altText = altText.replace(/(\.webp|\.webm)$/, '');
 
     if (isGif) {
-        const $video = $('<video>', { class: `card-img-top img-fluid ${shakeClass}`, src: item.download_url, alt: altTxt }).prop({ autoplay: true, loop: true, muted: true });
+        const $video = $('<video>', { class: `card-img-top img-fluid ${shakeClass}`, src: item.download_url, alt: altText }).prop({ autoplay: true, loop: true, muted: true });
         $card.append($video);
     } else {
-        const $image = $('<img>', { src: item.download_url, class: `card-img-top img-fluid ${shakeClass}`, alt: altTxt });
+        const $image = $('<img>', { src: item.download_url, class: `card-img-top img-fluid ${shakeClass}`, alt: altText });
         $card.append($image);
     }
     $imageContainer.append($card);
@@ -25,15 +25,27 @@ $.get(folderUrl).done(data => $('#imageContainer').append(data.reverse().filter(
 
 $(document).ready(function() {
 
+  const sr = ScrollReveal();
+
+  $('.FanArt').each(function () {
+    sr.reveal(this, {
+        duration: 3000,
+        origin: 'top',
+        distance: '-20px',
+        delay: 200,
+        easing: 'ease-in-out',
+    });
+  });
+
   $('#imageContainer').on('click', '.card img, .card video', function(){
     var src = $(this).attr('src');
     var Video = src.toLowerCase().endsWith('.webm');
 
     if (!Video) {
-      var modal = '<img src="' + src + '" class="img-fluid rounded-bottom">';
+      var modal = '<img src="' + src + '" class="img-fluid rounded-bottom" alt="FanArts">';
       $('.modal .modal-body').html(modal);
     } else {
-      var modal = '<video src="' + src + '" class="img-fluid rounded-bottom" autoplay loop muted></video>';
+      var modal = '<video src="' + src + '" class="img-fluid rounded-bottom" alt="FanArts" autoplay loop muted></video>';
       $('.modal .modal-body').html(modal);
     }
     $('.modal').modal('show');
