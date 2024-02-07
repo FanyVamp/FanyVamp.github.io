@@ -6,16 +6,14 @@ $.get(folderUrl).done(data => $('#imageContainer').append(data.reverse().filter(
     const $imageContainer = $('<div>', { class: 'FanArt col-sm-6 col-md-4 col-lg-3' });
     const $card = $('<div>', { class: 'card mb-4' });
 
-    const shakeClass = 'shake-' + ['little', 'slow', 'slow', 'horizontal', 'vertical'][Math.floor(Math.random() * 5)];
-
     let altText = item.name.replace(/-0+/, ' '); 
     altText = altText.replace(/(\.webp|\.webm)$/, '');
 
     if (isGif) {
-        const $video = $('<video>', { class: `card-img-top img-fluid ${shakeClass}`, src: item.download_url, alt: altText }).prop({ autoplay: true, loop: true, muted: true });
+        const $video = $('<video>', { class: `card-img-top img-fluid`, src: item.download_url, alt: altText }).prop({ autoplay: true, loop: true, muted: true });
         $card.append($video);
     } else {
-        const $image = $('<img>', { src: item.download_url, class: `card-img-top img-fluid ${shakeClass}`, alt: altText });
+        const $image = $('<img>', { src: item.download_url, class: `card-img-top img-fluid`, alt: altText });
         $card.append($image);
     }
     $imageContainer.append($card);

@@ -16,6 +16,14 @@ window.onload = () =>
     });
   });
 
+  $(document).ready(function () {
+    $('#preloader').hide();
+    
+    $(window).on('load', function () {
+      $('body').css('overflow', 'auto');
+    });
+  });
+
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
   
