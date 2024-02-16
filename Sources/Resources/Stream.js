@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function () {
     var twitchFany = new Twitch.Embed("twitch-embed-Fany", {
       width: 854,
       height: 480,
@@ -28,4 +28,4 @@ $(document).ready(function() {
         twitchFanyArt.setMuted(false);
       }
     });
-  });
+});
