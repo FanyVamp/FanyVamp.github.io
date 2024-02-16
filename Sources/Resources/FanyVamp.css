@@ -33,12 +33,6 @@ html, body{
 .Top{
   padding-top: 5rem;
 }
-#twitch-embed{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
 .container{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -53,7 +47,7 @@ p{
   width: 100%;
 }
 h1{
-  border: 0.3125rem double rgb(39, 28, 48);
+  border:  0.3125rem double rgb(39, 28, 48);
   background-color: rgba(0, 0, 0, 0.5); 
 }
 .Novedades{
