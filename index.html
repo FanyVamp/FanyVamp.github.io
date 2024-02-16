@@ -59,14 +59,54 @@
       </div>
     </div>
   </div>
+
   <div id="Twitch" class="Section"><h1 class="text-light text-center fw-bold">Stream en Vivo</h1></div>
   <div class="container">
     <div class="row">
-      <div class="col-md-8 mx-auto">
-        <div id="twitch-embed">
-          <iframe src="https://player.twitch.tv/?channel=fanyvamp&parent=fanyvamp.github.io" title="Stream" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="80%" alt="Stream"></iframe>
-          <iframe src="https://www.twitch.tv/embed/fanyvamp/chat?parent=fanyvamp.github.io" title="Chat" frameborder="0" scrolling="no" height="378" width="37%" alt="Chat"></iframe>
-      </div>
+      <div class="col-md-12 mx-auto">
+        <div class="d-flex justify-content-center">
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <div id="carouselExampleControls" class="carousel carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2 class="d-flex justify-content-between align-items-center">
+                <span class="text-light fw-bold">FanyVamp</span>
+                <div class="text-right">
+                <button class="btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                  </svg>
+                </button>
+                <button class="btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                  </svg>
+                </button>
+                </div>
+              </h2>
+              <div id="twitch-embed-Fany" class="carousel-twitch"></div>
+            </div>   
+            <div class="carousel-item">
+              <h2 class="d-flex justify-content-between align-items-center">
+                <span class="text-light fw-bold">FanyVamp Art</span>
+                <div class="text-right">
+                <button class="btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                  </svg>
+                </button>
+                <button class="btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                  </svg>
+                </button>
+                </div>
+              </h2>
+              <div id="twitch-embed-FanyArt" class="carousel-twitch"></div>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </div>
@@ -182,6 +222,7 @@
 </footer>
 
     <script src="Sources/Resources/Libraries/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="Sources/Resources/Stream.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="Sources/Resources/ScrollReveal.js"></script>
     <script src="Sources/Resources/ScrollSection.js"></script>
