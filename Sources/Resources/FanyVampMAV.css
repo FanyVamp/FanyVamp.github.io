@@ -1,5 +1,5 @@
 html,body {
-  background-image: url(Profile/Tournament.png);
+  background-image: url(Profile/Tournament.webp);
   height: 100%;
   padding-right: 0px !important;
   overflow: visible !important;
@@ -11,7 +11,7 @@ html,body {
 
 .offcanvas {
   --bs-offcanvas-width: 75%;
-  background-image: url(Profile/MAV.png);
+  background-image: url(Profile/MAV.weTournament.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
