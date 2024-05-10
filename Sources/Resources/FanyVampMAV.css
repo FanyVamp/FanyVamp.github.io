@@ -1,0 +1,74 @@
+html,body {
+  background-image: url(Profile/Tournament.png);
+  height: 100%;
+  padding-right: 0px !important;
+  overflow: visible !important;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.offcanvas {
+  --bs-offcanvas-width: 75%;
+  background-image: url(Profile/MAV.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pelota {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: linear-gradient(15deg, #9e9e9e, #ccc);
+  animation: girar 5s infinite linear, brillo 2s infinite alternate;
+}
+
+.pelota:hover {
+  background: linear-gradient(15deg, #ff0000, #fa7070);
+  animation: girar 5s infinite linear, shine 2s infinite alternate;
+  cursor: pointer;
+}
+
+.TypeOne {
+  background: linear-gradient(15deg, #9e9e9e, #ccc);
+}
+
+.TypeTwo {
+  background: linear-gradient(15deg, #ccc, #9e9e9e);
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes brillo {
+  from {
+    border-color: white;
+    box-shadow: 0 0 10px white;
+  }
+
+  to {
+    border-color: #fff;
+    box-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
+  }
+}
+
+@keyframes shine {
+  from {
+    box-shadow: 0 0 10px red;
+  }
+
+  to {
+    box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red;
+  }
+}

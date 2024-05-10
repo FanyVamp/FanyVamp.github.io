@@ -1,10 +1,10 @@
-const folderUrl = 'https://api.github.com/repos/fanyvamp/fanyvamp.github.io/contents/Sources/Fanart';
+const folderUrl = 'https://api.github.com/repos/fanyvamp/fanyvamp.github.io/contents/Sources/MAV/Draw';
 
 $.get(folderUrl).done(data => $('#imageContainer').append(data.reverse().filter(item => item.type === 'file').map(item => {
     const isGif = item.name.endsWith('.webm');
 
-    const $imageContainer = $('<div>', { class: 'FanArt col-sm-6 col-md-4 col-lg-3' });
-    const $card = $('<div>', { class: 'card mb-4' });
+    const $imageContainer = $('<div>', { class: 'Draws'});
+    const $card = $('<div>', { class: 'card col mb-4' });
 
     let altText = item.name.replace(/-0+/, ' '); 
     altText = altText.replace(/(\.webp|\.webm)$/, '');
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   const sr = ScrollReveal();
 
-  $('.FanArt').each(function () {
+  $('.Draws').each(function () {
     sr.reveal(this, {
         duration: 3000,
         origin: 'top',
@@ -40,10 +40,10 @@ $(document).ready(function() {
     var Video = src.toLowerCase().endsWith('.webm');
 
     if (!Video) {
-      var modal = '<img src="' + src + '" class="img-fluid rounded-bottom" alt="FanArts">';
+      var modal = '<img src="' + src + '" class="img-fluid rounded-bottom" alt="Draws">';
       $('.modal .modal-body').html(modal);
     } else {
-      var modal = '<video src="' + src + '" class="img-fluid rounded-bottom" alt="FanArts" autoplay loop muted></video>';
+      var modal = '<video src="' + src + '" class="img-fluid rounded-bottom" alt="Draws" autoplay loop muted></video>';
       $('.modal .modal-body').html(modal);
     }
     $('.modal').modal('show');
@@ -56,7 +56,7 @@ $(document).ready(function() {
     } else {
       fileName = fileName.replace(".webm", ".gif");
     }
-    var imageUrl = 'https://raw.githubusercontent.com/FanyVamp/FanyVamp.github.io/main/Sources/Fanarts/' + fileName;
+    var imageUrl = 'https://raw.githubusercontent.com/FanyVamp/FanyVamp.github.io/main/Sources/MAV/Draws' + fileName;
 
     if ($(this).hasClass("Copy")) {
       copyImageToClipboard(imageUrl);
