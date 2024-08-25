@@ -13,6 +13,9 @@ html, body{
   display: flex;
   flex-direction: column;
 }
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 #preloader {
   position: fixed;
   width: 100%;
@@ -58,6 +61,11 @@ h1{
   justify-content: center;
   margin: 0 auto;
   border: 0.3125rem double rgb(39, 28, 48);
+}
+.Lite-Yt {
+  width: 854;
+  height: 480;
+  border:  0.3125rem solid #16161d;
 }
 .twitter-timeline{
   padding-top: 2rem;

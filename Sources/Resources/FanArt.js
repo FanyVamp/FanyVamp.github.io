@@ -40,10 +40,10 @@ $(document).ready(function() {
     var Video = src.toLowerCase().endsWith('.webm');
 
     if (!Video) {
-      var modal = '<img src="' + src + '" class="img-fluid rounded-bottom" alt="FanArts">';
+      var modal = '<img src="' + src + '" class="img-fluid rounded-bottom" alt="FanyVamp FanArts">';
       $('.modal .modal-body').html(modal);
     } else {
-      var modal = '<video src="' + src + '" class="img-fluid rounded-bottom" alt="FanArts" autoplay loop muted></video>';
+      var modal = '<video src="' + src + '" class="img-fluid rounded-bottom" alt="FanyVamp FanArts" autoplay loop muted></video>';
       $('.modal .modal-body').html(modal);
     }
     $('.modal').modal('show');
