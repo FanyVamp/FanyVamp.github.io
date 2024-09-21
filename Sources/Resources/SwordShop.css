@@ -1,0 +1,114 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(Profile/SwordShopBG.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Bruno Ace SC', sans-serif !important;
+    scroll-padding-top: 5rem;
+    scrollbar-width: none;
+}
+#main-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Top{
+    padding-top: 5rem;
+  }
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    flex: 1;
+}
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #823a6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#preloader img {
+    max-width: 30%;
+    max-height: 30%;
+  }
+.Common,.common,.comon,.Comon {
+    background-color: rgb(255, 255, 255);
+}
+
+.Godly,.godly {
+  background: linear-gradient(135deg, rgb(255, 24, 28), rgb(255, 85, 0));
+}
+
+.Rare,.rare {  
+  background: linear-gradient(135deg, rgb(17, 255, 0), rgb(0, 255, 8));
+}
+
+.Mythical,.mythical {
+  background: linear-gradient(135deg, rgb(255, 3, 253), rgb(250, 2, 8));
+
+}
+.Legendary,.legendary {
+  background: linear-gradient(135deg, rgb(0, 255, 204), rgb(79, 217, 255));
+}
+.card.disabled {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    cursor: no-drop;
+}
+h1, h2, h3, p {
+  font-family: 'Bruno Ace SC', sans-serif !important;
+}
+.Discord {
+display: inline-block;
+width: 3rem;
+height: 3rem;
+padding: 0.25rem;
+}
+.btn img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%; 
+}
+.card-body {
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 20px;
+}
+.card-img-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.col-md-4 {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.row {
+    justify-content: center;
+}
+footer p{
+  margin-bottom: 0;
+}
