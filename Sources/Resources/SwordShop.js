@@ -15,7 +15,7 @@ if (values.length > 0) {
         let Aura = values[i][5]
         let Gems = values[i][6]
         let Disabled = Stock == 0 ? 'disabled' : '';
-        let WithAura = Aura != null ? '' : 'visibility: hidden;';
+        let WithAura = Aura != (null || '') ? '' : 'visibility: hidden;';
         
         let Contenedor = `
         <div class="col-md-4 mb-4">
