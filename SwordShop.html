@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <title>Sword Shop - Fany Vampirina</title>
   <!-- Página Web Hecha Con Mucho Cariño Por KC8 -->
@@ -7,177 +8,181 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Bienvenido A La Página Web De La Venta De Espadas De Death Ball, Con Multiples Espadas Y Ofertas">
-  <meta name="keywords" content="FanyVamp,Fany Vamp,FanyVampirina,Fany Vampirina,FanyVamp FanArts,Fany Vamp FanArts, MAV, DeathBall, Death Ball, DeathBall Swords, DeathBall Shop">
+  <meta name="keywords"
+    content="FanyVamp,Fany Vamp,FanyVampirina,Fany Vampirina,FanyVamp FanArts,Fany Vamp FanArts, MAV, DeathBall, Death Ball, DeathBall Swords, DeathBall Shop, Death Ball Swords, Death Ball Shop, DeathBall Tienda, DeathBall Espadas, Death Ball Tienda, Death Ball Espadas, Roblox DeathBall, Death Ball Compra, DeathBall Compra">
   <link rel="shortcut icon" href="favicon.ico">
   <script src="Sources/Resources/Libraries/JQuery/jQuery3.7.1.js"></script>
   <link rel="stylesheet" href="Sources/Resources/Libraries/Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="Sources/Resources/SwordShop.css">
   <link rel="stylesheet" href="Sources/Resources/Libraries/csshake/csshake.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Sources/Resources/SwordShop.css">
 
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" class="scrollspy" id="main-container">
 
   <div id="preloader">
     <img src="Sources/Examples/Logo.webp" alt="Logo">
   </div>
-<div class="navbar-section">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="navbar-section">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-lg-2 fs-4 fw-bold" href="#Inicio"><img class="rounded-circle"
+            src="Sources/Resources/Profile/MAV.webp" width="50px" height="50px" alt="Fany Vamp"><span
+            class="ms-lg-2 ms-md-2 ms-sm-2 ms-xs-2">FanyVamp</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav me-lg-5">
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-light" href="#Items">Items</a>
+            </li>
+            <li class="nav-item"></li>
+            <a class="nav-link fw-bold text-light" href="#Redeem" data-bs-toggle="modal"
+              data-bs-target="#Redeem">Canjear</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="content">
+
+    <div id="Inicio" class="Top">
+      <h1 class="text-light text-center fw-bold">¡Bienvenido!</h1>
+      <p class="text-light text-center fw-bold">Catalago de venta de espadas de Death Ball</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mx-auto">
+            <div class="container-fluid">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-6" id="Items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </table>
+
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formModalLabel">Tienda de Espadas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLSeEnXc2r9QDuyqJ-R3USrMNKx8r1f6au6ucmVE3TjQ5BhHaRw/formResponse"
+              target="_self" id="Form" method="POST">
+              <fieldset>
+                <small>Rellena el formulario para realizar una petición de compra</small>
+              </fieldset>
+
+              <fieldset>
+                <legend for="1946388250">Nickname</legend>
+                <div class="form-group">
+                  <p class="help-block">Escribe tu nickname o nombre</p>
+                  <input id="1040944769" type="text" name="entry.1040944769" class="form-control" required>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend for="1235767642">Correo</legend>
+                <div class="form-group">
+                  <p class="help-block">Ingresa un correo electronico</p>
+                  <input id="2118049572" type="text" name="entry.2118049572" class="form-control" required>
+                </div>
+              </fieldset>
+
+              <fieldset style="display: none;">
+                <legend for="2054633397">Sword</legend>
+                <div class="form-group">
+                  <p class="help-block">Sword Data</p>
+                  <textarea id="805425399" name="entry.805425399" class="form-control" required></textarea>
+                </div>
+              </fieldset>
+
+              <input type="hidden" name="fvv" value="1">
+              <input type="hidden" name="fbzx" value="-5173552254111717701">
+
+              <input type="hidden" name="pageHistory" value="0">
+
+              <input class="btn btn-success" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" id="Redeem" tabindex="-1" aria-labelledby="RedeemLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="RedeemLabel">Instrucciones para Comprar/Canjear</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>Selecciona la espada que deseas canjear en la lista de items disponibles</li>
+              <li>Haz clic en el botón "Comprar" en la espada a comprar</li>
+              <li>Completa el formulario con tu nickname y correo electrónico</li>
+              <li>Una vez enviado, recibirás un Ticket para canjear la espada</li>
+            </ol>
+            <p>Para terminar de comprar la espada, tienes que canjearla en el servidor de Discord
+              <span>
+                <a href="https://discord.gg/b4k3XAr9sR" class="btn active Discord" target="_blank" alt="Discord"
+                  aria-label="Discord">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#5865F2" data-bs-toggle="tooltip"
+                    data-bs-title="SwordShop" data-bs-placement="bottom" alt="Icon" class="bi bi-discord shake" viewBox="0 0 16 16">
+                    <path
+                      d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.62 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.62 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+                  </svg>
+                </a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand ms-lg-2 fs-4 fw-bold" href="#Inicio"><img
-          class="rounded-circle" src="Sources/Resources/Profile/MAV.webp" width="50px" height="50px" alt="Fany Vamp"><span
-          class="ms-lg-2 ms-md-2 ms-sm-2 ms-xs-2">FanyVamp</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav me-lg-5">
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-light" href="#Items">Items</a>
-          </li>
-          <li class="nav-item"></li>
-           <a class="nav-link fw-bold text-light" href="#Redeem" data-bs-toggle="modal" data-bs-target="#Redeem">Canjear</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<div class="content">
-  
-  <div id="Inicio" class="Top">
-    <h1 class="text-light text-center fw-bold">¡Bienvenido!</h1>
-    <p class="text-light text-center fw-bold">Catalago de venta de espadas de Death Ball</p>
-    <div class="container">
       <div class="row">
-        <div class="col-md-12 mx-auto">
-          <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-6" id="Items"></div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-</table>
-
-<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="formModalLabel">Tienda de Espadas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeEnXc2r9QDuyqJ-R3USrMNKx8r1f6au6ucmVE3TjQ5BhHaRw/formResponse"
-      target="_self"
-      id="Form"
-      method="POST">
-    <fieldset>
-      <small>Rellena el formulario para realizar una petición de compra</small>
-    </fieldset>
-
-    <fieldset>
-        <legend for="1946388250">Nickname</legend>
-        <div class="form-group">
-            <p class="help-block">Escribe tu nickname o nombre</p>
-            <input id="1040944769" type="text" name="entry.1040944769" class="form-control" required>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend for="1235767642">Correo</legend>
-        <div class="form-group">
-            <p class="help-block">Ingresa un correo electronico</p>
-            <input id="2118049572" type="text" name="entry.2118049572" class="form-control" required>
-        </div>
-    </fieldset>
-
-    <fieldset style="display: none;">
-        <legend for="2054633397">Sword</legend>
-        <div class="form-group">
-            <p class="help-block">Sword Data</p>
-            <textarea id="805425399" name="entry.805425399" class="form-control" required></textarea>
-        </div>
-    </fieldset>
-
-    <input type="hidden" name="fvv" value="1">
-    <input type="hidden" name="fbzx" value="-5173552254111717701">
-
-    <input type="hidden" name="pageHistory" value="0">
-
-    <input class="btn btn-success" type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="modal fade" id="Redeem" tabindex="-1" aria-labelledby="RedeemLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="RedeemLabel">Instrucciones para Comprar/Canjear</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <ol>
-          <li>Selecciona la espada que deseas canjear en la lista de items disponibles</li>
-          <li>Haz clic en el botón "Comprar" en la espada a comprar</li>
-          <li>Completa el formulario con tu nickname y correo electrónico</li>
-          <li>Una vez enviado, recibirás un Ticket para canjear la espada</li>
-        </ol>
-        <p>Para terminar de comprar la espada, tienes que canjearla en el servidor de Discord 
-          <span>
+        <div class="col-md-8 mx-auto">
+          <p class="text-light fw-bold text-center translucent">Canjeos & FAQ:</p>
+          <div class="text-center">
             <a href="https://discord.gg/b4k3XAr9sR" class="btn active Discord" target="_blank" alt="Discord"
-          aria-label="Discord">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="#5865F2" data-bs-toggle="tooltip" data-bs-title="Vamirinos"
-            alt="Icon" class="bi bi-discord shake" viewBox="0 0 16 16">
-            <path
-              d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.62 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.62 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
-          </svg>
-            </a>
-          </span>
-    </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-<footer class="bg-dark">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <p class="text-light fw-bold text-center translucent">Canjeos & FAQ:</p>
-        <div class="text-center">
-          <a href="https://discord.gg/b4k3XAr9sR" class="btn active Discord" target="_blank" alt="Discord"
               aria-label="Discord">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#F8F9FA" data-bs-toggle="tooltip" data-bs-title="Vamirinos"
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#F8F9FA" data-bs-toggle="tooltip" data-bs-title="SwordShop" data-bs-placement="right"
                 alt="Icon" class="bi bi-discord shake" viewBox="0 0 16 16">
                 <path
                   d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.62 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.62 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
               </svg>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 
 </body>
-
 <script src="Sources/Resources/SwordShop.js"></script>
-<script src="Sources/Resources/ScrollSection.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
 <script src="Sources/Resources/Libraries/Bootstrap/js/bootstrap.bundle.js"></script>
+<script src="Sources/Resources/ScrollSection.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
+  integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+
 </html>
