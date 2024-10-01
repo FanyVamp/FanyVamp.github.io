@@ -1,0 +1,15 @@
+#robots.txt made by KC8 of course
+#Made in 10/1/2024
+#If You not are a robot say Hi o/
+#
+User-agent: *
+#
+Disallow: /Sources/
+Disallow: /Sources/Resources/
+#
+Allow: /
+Allow: /FanArts/
+Allow: /SwordShop/
+Allow: /Sources/Fanarts
+#
+Sitemap: https://fanyvamp.github.io/SM.xml

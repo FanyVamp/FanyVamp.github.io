@@ -2,7 +2,7 @@ function formatTime(number) {
     return number < 10 ? `0${number}` : number;
 }
 function UC() {
-    const targetDate = new Date('2023-10-30T11:00:00-03:00');
+    const targetDate = new Date('2024-10-30T11:00:00-03:00');
     const currentDate = new Date();
     const timeDifference = targetDate - currentDate;
 
@@ -17,7 +17,7 @@ function UC() {
         const FMinutes = formatTime(minutes);
         const FSeconds = formatTime(seconds);
         if (days > 0) {
-            document.getElementById('Contador').innerHTML = `${days} Día - ${FHours}:${FMinutes}:${FSeconds}`;
+            document.getElementById('Contador').innerHTML = `${days} Días - ${FHours}:${FMinutes}:${FSeconds}`;
         } else {
             document.getElementById('Contador').innerHTML = `${FHours}:${FMinutes}:${FSeconds}`;
         }
