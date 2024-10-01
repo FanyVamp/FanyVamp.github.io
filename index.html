@@ -11,6 +11,8 @@
     content="Bienvenido A La Página Web De FanyVamp Esta Página Esta Hecha Para Proporcionar Y Brindar Información Acerca De La Streamer Fany Vamp, Sus Redes Sociales, Novedades Y Mucho Más">
   <meta name="keywords" content="FanyVamp,Fany Vamp,FanyVampirina,Fany Vampirina,FanyVamp FanArts,Fany Vamp FanArts">
   <link rel="shortcut icon" href="favicon.ico">
+  <link rel="canonical" href="https://FanyVamp.github.io/">
+  <link rel="robots" href="https://FanyVamp.github.io/robots.txt">
   <link rel="stylesheet" href="Sources/Resources/Libraries/Bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="Sources/Resources/Libraries/csshake/csshake.css">
   <link rel="stylesheet" href="Sources/Resources/FanyVamp.css">
@@ -70,7 +72,7 @@
       </div>
     </div>
 
-    <div id="Twitch" class="Section">
+    <div id="Twitch">
       <h1 class="text-light text-center fw-bold">Stream en Vivo</h1>
       <div class="container">
         <div class="row">
@@ -83,16 +85,16 @@
                     <h2 class="d-flex justify-content-between align-items-center">
                       <span class="text-light fw-bold">FanyVamp</span>
                       <div class="text-right">
-                        <button class="btn" type="button" data-bs-target="#carouselExampleControls" aria-label="Anterior"
-                          data-bs-slide="prev">
+                        <button class="btn" type="button" data-bs-target="#carouselExampleControls"
+                          aria-label="Anterior" data-bs-slide="prev">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
                             <path
                               d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1" />
                           </svg>
                         </button>
-                        <button class="btn" type="button" data-bs-target="#carouselExampleControls" aria-label="Siguiente"
-                          data-bs-slide="next">
+                        <button class="btn" type="button" data-bs-target="#carouselExampleControls"
+                          aria-label="Siguiente" data-bs-slide="next">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
                             <path
@@ -135,12 +137,18 @@
       </div>
     </div>
 
-    <div id="Novedades" class="Section">
+    <div id="Novedades">
       <h1 class="text-light text-center fw-bold">Novedades</h1>
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
 
+            <div class="col-md-12">
+              <p class="text-light fw-bold text-center">Tiempo Para Mi Cumpleaños</p>
+              <div class="text-center">
+                <p id="Contador" class="text-light fw-bold text-center"></p>
+              </div>
+            </div>
 
             <div class="col-md-12">
               <p class="text-light fw-bold text-center">Mi Canal De VODS Donde Resubo Los Streams:</p>
@@ -150,8 +158,6 @@
                 </div>
               </div>
             </div>
-
-
 
             <div class="col-md-12">
               <div class="d-flex justify-content-center">
@@ -164,7 +170,8 @@
             <div class="col-md-12">
               <p class="text-light fw-bold text-center">Mi Texture Pack De Minecraft:</p>
               <div class="text-center">
-                <a href=" https://www.mediafire.com/file/xzwhtlixcaohget/MistaKesent3.0.zip/file" target="_blank" aria-label="Texture Pack">
+                <a href=" https://www.mediafire.com/file/xzwhtlixcaohget/MistaKesent3.0.zip/file" target="_blank"
+                  aria-label="Texture Pack">
                   <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" fill="currentColor" color="green"
                     class="bi bi-boxes img-fluid shake-slow mc" viewBox="0 0 16 16" data-bs-toggle="tooltip"
                     data-bs-placement="bottom" data-bs-title="Texture Pack">
@@ -180,7 +187,7 @@
       </div>
     </div>
 
-    <div id="Comisiones" class="Section">
+    <div id="Comisiones">
       <h1 class="text-light text-center fw-bold">Comisiones</h1>
       <div class="container">
         <div class="row">
@@ -189,12 +196,14 @@
               Mis Metas:</p>
             <div class="text-center">
               <a href="https://vgen.co/FanyVamp" target="_blank">
-                <img src="Sources/Examples/VGen.webp" alt="VGen" class="VGen shake-slow img-fluid" style="max-width: 300px; height: auto;"
-                  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Comisiones">
+                <img src="Sources/Examples/VGen.webp" alt="VGen" class="VGen shake-slow img-fluid"
+                  style="width: 300px; height: auto;" data-bs-toggle="tooltip" data-bs-placement="left"
+                  data-bs-title="Comisiones">
               </a>
               <a href="https://ko-fi.com/fanyvamp/commissions" target="_blank">
-                <img src="Sources/Examples/Kofi.webp" alt="Kofi" class="Kofi shake-slow img-fluid"  style="max-width: 300px; height: auto;"
-                  data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Comisiones">
+                <img src="Sources/Examples/Kofi.webp" alt="Kofi" class="Kofi shake-slow img-fluid"
+                  style="width: 300px; height: auto;" data-bs-toggle="tooltip" data-bs-placement="right"
+                  data-bs-title="Comisiones">
               </a>
             </div>
             <p class="text-light fw-bold text-center">Meta Actual:</p>
@@ -205,7 +214,7 @@
       </div>
     </div>
 
-    <div id="Historia" class="Section">
+    <div id="Historia">
       <h1 class="text-light text-center fw-bold">Historia</h1>
       <div class="container">
         <div class="row">
@@ -214,8 +223,9 @@
               acompañante gatuno, llamado nekokun, con el tiempo me conoceras mejor y sabras exactamente lo que soy</p>
             <div class="text-center">
               <a href="https://noveltoon.mobi/es/la-traicion-del-reino?content_id=3065102" target="_blank">
-                <img src="Sources/Examples/Historia.webp" alt="FanyVamp Historia" class="Historia shake-slow" style="max-width: 200px; height: auto;"
-                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="La Tración Del Reino">
+                <img src="Sources/Examples/Historia.webp" alt="FanyVamp Historia" class="Historia shake-slow"
+                  style="width: 200px; height: auto;" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  data-bs-title="La Tración Del Reino">
               </a>
             </div>
           </div>
@@ -223,7 +233,7 @@
       </div>
     </div>
 
-    <div id="FanArts" class="Section">
+    <div id="FanArts">
       <h1 class="text-light text-center fw-bold">FanArts</h1>
       <div class="container">
         <div class="row">
@@ -232,8 +242,8 @@
               Imagen:</p>
             <div class="text-center">
               <a href="FanArts">
-                <img src="Sources/Examples/FanArts-Section.webp" data-bs-toggle="tooltip" data-bs-placement="right" style="max-width: auto; height: auto;"
-                  data-bs-title="FanArts" alt="FanyVamp FanArts" class="shake-slow">
+                <img src="Sources/Examples/FanArts-Section.webp" data-bs-toggle="tooltip" data-bs-placement="right"
+                  style="width: auto; height: auto;" data-bs-title="FanArts" alt="FanyVamp FanArts" class="shake-slow">
               </a>
             </div>
           </div>
@@ -302,7 +312,7 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="Sources/Resources/ScrollReveal.js"></script>
   <script src="Sources/Resources/ScrollSection.js"></script>
-
+  <script src="Sources/Resources/BirthDay.js"></script>
 </body>
 
 </html>
